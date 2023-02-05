@@ -1,229 +1,120 @@
 body {
   font-family: Arial, sans-serif;
   margin: 0;
-  padding: 0;
-  }
-  
-  header {
-  background-color: #663399;
+  background: linear-gradient(to right, #7851a9, #5e3f93);
+}
+
+header {
+  background-color: #7851a9;
   color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+nav {
+  background-color: #eee;
+  color: #7851a9;
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 80px;
-  }
-  
-  header h1 {
-  margin: 0;
-  }
-  
-  nav {
-  background-color: #E6E6E6;
-  display: flex;
-  justify-content: center;
-  }
-  
-  nav ul {
+}
+
+nav ul {
   display: flex;
   list-style: none;
   margin: 0;
   padding: 0;
-  }
-  
-  nav li {
-  margin: 0 10px;
-  }
-  
-  nav a {
-  color: #663399;
+}
+
+nav li a {
+  color: #7851a9;
+  display: block;
+  padding: 10px;
   text-decoration: none;
-  }
-  
-  main {
+}
+
+nav li a:hover {
+  background-color: #5e3f93;
+  color: white;
+}
+
+main {
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: calc(100vh - 160px);
-  }
-  
-  section {
-  background-color: #F0E6FF;
+}
+
+section {
+  background-color: #ddd;
+  display: none;
   padding: 20px;
   width: 80%;
-  }
-  
-  section h2 {
-  margin: 0;
-  }
-  
-  section p {
-  margin: 0;
-  }
-  
-  section ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  }
-  
-  section li {
-  margin-bottom: 20px;
-  }
-  
-  section h3 {
-  margin: 0;
-  }
-  
-  form {
+}
+
+#about {
+  display: block;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.skill-item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #F0E6FF;
-  padding: 20px;
-  width: 80%;
-  }
-  
-  label, input, textarea {
-  width: 100%;
+  margin: 20px;
+  text-align: center;
+}
+
+.skill-item i {
+  font-size: 48px;
   margin-bottom: 10px;
-  padding: 10px;
-  }
-  
-  input[type="submit"] {
-  background-color: #663399;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-  }
-  
-  footer {
-  background-color: #663399;
-  color: white;
+}
+
+#work-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#work-list li {
+  margin: 20px 0;
+}
+
+#work-list a {
+  color: #7851a9;
+  text-decoration: none;
+}
+
+#contact {
+  text-align: center;
+}
+
+form {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 80px;
-  }
-  
-  footer p {
-  margin: 0;
-  }
+}
 
-  .skills-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    }
-    
-    .skill-icon {
-    font-size: 40px;
-    color: #663399;
-    margin: 20px;
-    text-align: center;
-    }
-    
-    .html {
-    background-color: #f16529;
-    border-radius: 50%;
-    width: 80px;
-    height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    }
-    
-    .css {
-    background-color: #1572b6;
-    border-radius: 50%;
-    width: 80px;
-    height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    }
-    
-    .javascript {
-    background-color: #f7df1e;
-    border-radius: 50%;
-    width: 80px;
-    height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    }
-    
-    .node {
-    background-color: #215732;
-    border-radius: 50%;
-    width: 80px;
-    height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    }
-    
-    .express {
-    background-color: #446878;
-    border-radius: 50%;
-    width: 80px;
-    height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    }
-    
-    .mongo {
-    background-color: #47a248;
-    border-radius: 50%;
-    width: 80px;
-    height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    }
-    
-    .react {
-    background-color: #61dafb;
-    border-radius: 50%;
-    width: 80px;
-    height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    }
-    
-    .cplusplus {
-    background-color: #f34b7d;
-    border-radius: 50%;
-    width: 80px;
-    height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    }
-    
-    .python {
-    background-color: #3776ab;
-    border-radius: 50%;
-    width: 80px;
-    height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    }
-    
-    .data-science {
-    background-color: #f9a602;
-    border-radius: 50%;
-    width: 80px;
-    height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    }
-  
-  
-  
-  
+input,
+textarea {
+  border: 1px solid #ddd;
+  margin: 10px 0;
+  padding: 10px;
+  width: 80%;
+}
+
+textarea {
+  height: 150px;
+  resize: none;
+}
+
+input[type="submit"] {
+  background-color: #7851a9;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+}
