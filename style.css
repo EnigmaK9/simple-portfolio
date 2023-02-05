@@ -109,6 +109,120 @@ body {
   footer p {
   margin: 0;
   }
+
+  .skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    }
+    
+    .skill-icon {
+    font-size: 40px;
+    color: #663399;
+    margin: 20px;
+    text-align: center;
+    }
+    
+    .html {
+    background-color: #f16529;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    
+    .css {
+    background-color: #1572b6;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    
+    .javascript {
+    background-color: #f7df1e;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    
+    .node {
+    background-color: #215732;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    
+    .express {
+    background-color: #446878;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    
+    .mongo {
+    background-color: #47a248;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    
+    .react {
+    background-color: #61dafb;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    
+    .cplusplus {
+    background-color: #f34b7d;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    
+    .python {
+    background-color: #3776ab;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    
+    .data-science {
+    background-color: #f9a602;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
   
   
   
