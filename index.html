@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>My Portfolio</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="main.js"></script>
   </head>
   <body>
     <header>
@@ -11,15 +12,15 @@
     </header>
     <nav>
       <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#work">Work</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about" id="about-link" onclick="showSection('about')">About</a></li>
+        <li><a href="#work" id="work-link" onclick="showSection('work')">Work</a></li>
+        <li><a href="#contact" id="contact-link" onclick="showSection('contact')">Contact</a></li>
       </ul>
     </nav>
     <main>
       <section id="about">
         <h2>About</h2>
-        <p>Ignacio Padilla is a Junior Machine Learning Engineer 
+        <p id="about-text">Ignacio Padilla is a Junior Machine Learning Engineer 
           with a background in Computer Engineering and Psychology. He is 
           passionate about AI, programming, and chess and has strong math and 
           psych skills. He is seeking a first job in data science with a BE in 
@@ -30,28 +31,29 @@
       </section>
       <section id="work">
         <h2>Work</h2>
-        <ul>
+        <ul id="work-list">
           <li>
             <h3><a href=https://github.com/EnigmaK9/data-science-who-earned-the-most-in-sports>Project 1: Who earned the most in sports</a></h3>
-            <p>In this hacklab, a script in Python is developed with the help of Google Colaboratory to analyze 
+            <p id="work-item-1">In this hacklab, a script in Python is developed with the help of Google Colaboratory to analyze 
               the data. We also use the Power BI tool for chart visualization.</p>
           </li>
           <li>
             <h3><a href=https://github.com/saulaxel/scooters-anywhere-bd10-01>Scooters Anywhere</a></h3>
-            <p>Repository for creating a database in Oracle SQL for the company Scooters Anywhere.</p>
+            <p id="work-item-2">Repository for creating a database in Oracle SQL for the company Scooters Anywhere.</p>
           </li>
           <li>
             <h3><a href=https://github.com/EnigmaK9/netflix-clone>Netflix Clone</a></h3>
-            <p>Repository for the implementation of a Netflix clone using HTML, CSS and JavaScript.</p>
+            <p id="work-item-3">Repository for the implementation of a Netflix clone using HTML, CSS and JavaScript.</p>
           </li>
           <li>
+          <li>
             <h3><a href=https://github.com/EnigmaK9/pathfinding>Pathfinding</a></h3>
-            <p>A program that solves the pathfinding problem for a 20x20 cell map with at least 40 
-              obstacle cells. The pathfinding algorithm used is Dijkstra. 
+            <p id="work-item-4">A program that solves the pathfinding problem for a 20x20 cell map with at least 40
+              obstacle cells. The pathfinding algorithm used is Dijkstra.
               Implemented using Python and the pygame library. </p>
           </li>
             <h3><a href=https://github.com/EnigmaK9/covid19>COVID-19 Expert System</a></h3>
-            <p>Implementation in CLIPS of an Expert System to assist in the 
+            <p id="work-item-5">Implementation in CLIPS of an Expert System to assist in the
               diagnosis of COVID-19.            </p>
             </h3>
         </ul>
@@ -71,7 +73,7 @@
 
     </main>
     <footer>
-      <p>Copyright © 2023 EnigmaK9</p>
+      <p id="work-item">>Copyright © 2023 EnigmaK9</p>
     </footer>
   </body>
 </html>
