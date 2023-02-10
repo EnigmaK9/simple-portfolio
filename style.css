@@ -1,7 +1,17 @@
 body {
   font-family: Arial, sans-serif;
   margin: 0;
-  background: linear-gradient(to right, #7851a9, #5e3f93);
+  background: url("https://www.pixelstalk.net/wp-content/uploads/2016/06/Purple-galaxy-images-wallpapers.jpg") center/cover;
+  animation: twinkle .02s linear infinite;
+}
+
+@keyframes twinkle {
+  0% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 0.8;
+  }
 }
 
 header {
@@ -72,6 +82,31 @@ section {
   font-size: 48px;
   margin-bottom: 10px;
 }
+
+.butterfly-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.butterfly {
+  position: absolute;
+  bottom: 0;
+  animation: move-butterfly 20s linear infinite;
+}
+
+@keyframes move-butterfly {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
 
 #work-list {
   list-style: none;
