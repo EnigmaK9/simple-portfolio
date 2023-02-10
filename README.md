@@ -1,6 +1,7 @@
 # Portfolio 
-Welcome to my portfolio! Here, you will find a collection of my projects and experience in various fields of expertise, including data science, computer engineering, and psychology.
 [WEBSITE](https://enigmak9.github.io/simple-portfolio/)
+
+Welcome to my portfolio! Here, you will find a collection of my projects and experience in various fields of expertise, including data science, computer engineering, and psychology.
 ## Contents
 About Me: A brief overview of my background and education.
 Skills: A list of my technical and non-technical skills.
