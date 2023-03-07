@@ -54,25 +54,47 @@ body {
   
   /* Menu styles */
   .menu {
-    background-color: #7851a9;
+    ;
     color: #fff;
     text-align: center;
     padding: 10px 0;
   }
   
+  #botones{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+  }
+  .botones {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+  }
   .boton {
-    background-color: #fff;
-    color: #333;
-    font-size: 18px;
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    margin: 10px;
-    transition: all 0.3s ease;
+      background-color: #7851a9;
+      border: none;
+      color: white;
+      padding: 20px 40px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 24px;
+      margin: 10px;
+      border-radius: 10px;
+      box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+      transition: all 0.3s ease;
   }
   
+  .boton.extra{
+    font-size: 1em;
+    background-color: #27A774;
+    width: 150px;
+  }
   .boton:hover {
-    background-color: #333;
-    color: #fff;
+      background-color: #593c7c;
+      transform: translateY(-5px);
+      box-shadow: 0px 8px 15px rgba(0,0,0,0.3);
   }
   
