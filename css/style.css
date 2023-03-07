@@ -1,18 +1,4 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  background: url("https://www.pixelstalk.net/wp-content/uploads/2016/06/Purple-galaxy-images-wallpapers.jpg") center/cover;
-  animation: twinkle .02s linear infinite;
-}
 
-@keyframes twinkle {
-  0% {
-    opacity: 0.8;
-  }
-  100% {
-    opacity: 0.8;
-  }
-}
 
 header {
   background-color: #7851a9;
@@ -77,6 +63,14 @@ nav li a:hover {
     flex: none;
   }
 }
+main section {
+  display: none;
+  transition: display 0.5s ease-in-out;
+  /* you can adjust the duration and timing function as needed */
+}
+main section.show {
+  display: block;
+}
 
 main {
   display: flex;
@@ -86,9 +80,12 @@ main {
 section {
   background-color: #ddd;
   display: none;
+  opacity: 0;
   padding: 20px;
   width: 80%;
+  transition: opacity 0.5s ease-in-out;
 }
+
 
 section h2 {
   margin-top: 0;
@@ -114,7 +111,7 @@ section p {
   }
   
   #work {
-    order: 1;
+    display: block;
   }
   
   #contact {
@@ -215,4 +212,43 @@ input[type="submit"] {
   color: white;
   cursor: pointer;
   padding: 10px;
+}
+
+
+#botones{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	margin-top: 25px;
+}
+.botones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.boton {
+    background-color: #7851a9;
+    border: none;
+    color: white;
+    padding: 20px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+
+.boton.extra{
+	font-size: 1em;
+	background-color: #27A774;
+	width: 150px;
+}
+.boton:hover {
+    background-color: #3e8e41;
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 15px rgba(0,0,0,0.3);
 }
