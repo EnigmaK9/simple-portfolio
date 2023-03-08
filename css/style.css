@@ -30,7 +30,7 @@ nav {
 
 nav ul {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -41,13 +41,17 @@ nav li {
 }
 
 nav li a {
-  color: #7851a9;
+  background-color: #7851a9;
+  border: none;
+  color: white;
+  cursor: pointer;
   display: block;
   padding: 10px;
-  text-decoration: none;
   text-align: center;
+  text-decoration: none;
   width: 100%;
 }
+
 
 nav li a:hover {
   background-color: #5e3f93;
