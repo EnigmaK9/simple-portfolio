@@ -354,3 +354,79 @@ html:not(.platform-mac) .site-sidebar .block-blog { display: none; }
 .post .post-title { font-weight: 400; font-size: 36px; line-height: 1; margin-bottom: 10px; color: #7851a9; text-transform: none; }
 .post .post-date { font-style: italic; }
 .timeline.talks-timeline .talk-buttons .button { margin-top: 1em; }
+
+
+
+
+/* Mobile */
+@media only screen and (max-width: 767px) {
+    body {
+      font-size: 16px;
+    }
+  
+    .site-sidebar {
+      width: 100%;
+    }
+  
+    .person-title {
+      font-size: 24px;
+    }
+  
+    .person-subtitle {
+      font-size: 16px;
+    }
+  
+    .block-main {
+      width: 100%;
+    }
+  
+    .block-main img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  
+  /* Tablet */
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    body {
+      font-size: 18px;
+    }
+  
+    .site-sidebar {
+      width: 30%;
+      float: left;
+    }
+  
+    .block-main {
+      width: 70%;
+      float: right;
+    }
+  
+    .block-main img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  
+  /* Desktop */
+  @media only screen and (min-width: 1025px) {
+    body {
+      font-size: 20px;
+    }
+  
+    .site-sidebar {
+      width: 25%;
+      float: left;
+    }
+  
+    .block-main {
+      width: 75%;
+      float: right;
+    }
+  
+    .block-main img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  
