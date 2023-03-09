@@ -22,10 +22,14 @@ h1 {
 }
 
 nav {
-  background-color: #eee;
-  color: #7851a9;
+  
+  border-radius: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 20px;
+  width: 100%;
 }
 
 nav ul {
@@ -36,35 +40,54 @@ nav ul {
   padding: 0;
 }
 
-nav li {
-  flex: 1;
+
+nav li:nth-child(1) a {
+  margin-bottom: 4rem; /* add a big margin after "Work" */
+}
+
+nav li:nth-child(2) a {
+  margin-bottom: 4rem; /* add a big margin after "About" */
+}
+
+nav li:nth-child(3) a {
+  margin-bottom: 4rem; /* add a big margin after "Work" */
 }
 
 nav li a {
   background-color: #7851a9;
+  border-radius: 10px;
   border: none;
   color: white;
   cursor: pointer;
   display: block;
-  padding: 10px;
+  font-size: 24px;
+  padding: 20px;
   text-align: center;
   text-decoration: none;
   width: 100%;
 }
 
-
 nav li a:hover {
   background-color: #5e3f93;
-  color: white;
 }
 
 @media only screen and (min-width: 600px) {
-  nav ul {
-    flex-wrap: nowrap;
+  nav {
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px 0;
   }
-  
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+  }
+
   nav li {
-    flex: none;
+    margin-right: 20px;
+    margin-bottom: 0;
+    width: auto;
   }
 }
 main section {
