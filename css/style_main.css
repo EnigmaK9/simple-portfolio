@@ -1,48 +1,262 @@
 
-.fa, .fa-stack { display: inline-block; }
-.main-navigation ul, .site-sidebar .posts-list, .tech-icons, .tech-tags, .timeline > ul { list-style: none; }
-.fa { font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; line-height: 1; font-family: FontAwesome; font-size: inherit; text-rendering: auto; -webkit-font-smoothing: antialiased; }
-hr, legend, td, th { padding: 0px; }
-img, legend { border: 0px; }
-.dl-vertical dd, .dl-vertical dt, .main-navigation .navigation-extend-bar .social-icons, .pull-left { float: left; }
-body, h1, h2, h3, h4, h5, h6 { margin: 0px; }
-.fa-twitter-square::before { content: ""; }
-.fa-facebook-square::before { content: ""; }
-.fa-linkedin-square::before { content: ""; }
-.fa-github-square::before { content: ""; }
-.fa-bars::before, .fa-navicon::before, .fa-reorder::before { content: ""; }
-.fa-envelope::before { content: ""; }
-html { font-family: sans-serif; text-size-adjust: 100%; box-sizing: border-box; }
-article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary { display: block; }
-audio, canvas, progress, video { display: inline-block; vertical-align: baseline; }
-audio:not([controls]) { display: none; height: 0px; }
-[hidden], template { display: none; }
-a { background: 0px 0px; }
-a:active, a:hover { outline: 0px; }
-abbr[title] { border-bottom: 1px dotted; }
-b, optgroup, strong { font-weight: 700; }
-dfn { font-style: italic; }
-mark { background: rgb(255, 255, 0); color: rgb(0, 0, 0); }
-small { font-size: 80%; }
-sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
-sup { top: -0.5em; }
-sub { bottom: -0.25em; }
-svg:not(:root) { overflow: hidden; }
-figure { margin: 1em 40px; }
-pre, textarea { overflow: auto; }
-code, kbd, pre, samp { font-family: monospace, monospace; font-size: 1em; }
-button, input, optgroup, select, textarea { color: inherit; font: inherit; margin: 0px; }
-button { overflow: visible; }
-.dl-vertical, .site-sidebar { overflow: hidden; }
-button, select { text-transform: none; }
-.main-navigation, .person .person-content .person-title, .site-sidebar .block .block-title, h1, h2, h5 { text-transform: uppercase; }
-button, html input[type="button"], input[type="reset"], input[type="submit"] { appearance: button; cursor: pointer; }
-button[disabled], html input[disabled] { cursor: default; }
-input { line-height: normal; }
-input[type="checkbox"], input[type="radio"] { box-sizing: border-box; padding: 0px; }
-input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button { height: auto; }
-input[type="search"] { appearance: textfield; box-sizing: content-box; }
-input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration { appearance: none; }
+/* Set display to inline-block for all elements with class "fa" or "fa-stack" */
+.fa, .fa-stack {
+    display: inline-block;
+    }
+    
+/* Set list-style to none for multiple elements */
+.main-navigation ul,
+.site-sidebar .posts-list,
+.tech-icons,
+.tech-tags,
+.timeline > ul {
+list-style: none;
+}
+
+/* Set font properties for elements with class "fa" */
+.fa {
+font-style: normal;
+font-variant: normal;
+font-weight: normal;
+font-stretch: normal;
+line-height: 1;
+font-family: FontAwesome;
+font-size: inherit;
+text-rendering: auto;
+-webkit-font-smoothing: antialiased;
+}
+
+/* Set padding to 0 for multiple elements */
+hr,
+legend,
+td,
+th {
+padding: 0;
+}
+
+/* Remove border for images and legends */
+img,
+legend {
+border: 0;
+}
+
+/* Set float left for multiple elements */
+.dl-vertical dd,
+.dl-vertical dt,
+.main-navigation .navigation-extend-bar .social-icons,
+.pull-left {
+float: left;
+}
+
+/* Set margin to 0 for body and all heading elements */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+margin: 0;
+}
+
+/* Set the content for various FontAwesome icons */
+.fa-twitter-square::before {
+content: "";
+}
+.fa-facebook-square::before {
+content: "";
+}
+.fa-linkedin-square::before {
+content: "";
+}
+.fa-github-square::before {
+content: "";
+}
+.fa-bars::before,
+.fa-navicon::before,
+.fa-reorder::before {
+content: "";
+}
+.fa-envelope::before {
+content: "";
+}
+
+/* Set font-family and box-sizing for the html element */
+html {
+font-family: sans-serif;
+text-size-adjust: 100%;
+box-sizing: border-box;
+}
+
+/* Set display to block for various semantic elements */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+display: block;
+}
+
+/* Set display to inline-block for multimedia elements and adjust vertical-align */
+audio,
+canvas,
+progress,
+video {
+display: inline-block;
+vertical-align: baseline;
+}
+
+/* Set display to none for audio elements without controls and height to 0 */
+audio:not([controls]) {
+display: none;
+height: 0;
+}
+
+/* Set display to none for elements with "hidden" attribute and templates */
+[hidden],
+template {
+display: none;
+}
+
+/* Set background to 0 and remove outline for links */
+a {
+background: 0;
+}
+a:active,
+a:hover {
+outline: 0;
+}
+
+/* Set border-bottom for elements with "title" attribute */
+abbr[title] {
+border-bottom: 1px dotted;
+}
+
+/* Set font-weight for elements */
+b,
+optgroup,
+strong {
+font-weight: 700;
+}
+
+/* Set font-style for definition elements */
+dfn {
+font-style: italic;
+}
+
+/** Applies a yellow background with black text color to <mark> elements */
+mark {
+background: rgb(255, 255, 0);
+color: rgb(0, 0, 0);
+}
+
+/** Sets font size to 80% for <small> elements */
+small {
+font-size: 80%;
+}
+
+/** Sets font size to 75% and adjusts vertical position for subscripts and superscripts */
+sub, sup {
+font-size: 75%;
+line-height: 0;
+position: relative;
+vertical-align: baseline;
+}
+sup {
+top: -0.5em;
+}
+sub {
+bottom: -0.25em;
+}
+
+/** Hides any overflowing parts of SVG elements */
+svg:not(:root) {
+overflow: hidden;
+}
+
+/** Applies a margin of 1em on top and bottom and 40px on the sides to <figure> elements */
+figure {
+margin: 1em 40px;
+}
+
+/** Allows <pre> and <textarea> elements to display scrollbars if content overflows */
+pre, textarea {
+overflow: auto;
+}
+
+/** Applies monospace font and font size of 1em to <code>, <kbd>, <pre>, and <samp> elements */
+code, kbd, pre, samp {
+font-family: monospace, monospace;
+font-size: 1em;
+}
+
+/** Resets margin, color, and font of certain form elements */
+button, input, optgroup, select, textarea {
+color: inherit;
+font: inherit;
+margin: 0px;
+}
+
+/** Allows buttons to display any overflowing content */
+button {
+overflow: visible;
+}
+
+/** Prevents text-transform from being applied to disabled form elements */
+button, select {
+text-transform: none;
+}
+
+/** Applies uppercase text transformation to certain elements */
+.main-navigation, .person .person-content .person-title, .site-sidebar .block .block-title, h1, h2, h5 {
+text-transform: uppercase;
+}
+
+/** Applies button appearance and cursor to certain form elements */
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+appearance: button;
+cursor: pointer;
+}
+
+/** Resets cursor to default for disabled form elements */
+button[disabled], html input[disabled] {
+cursor: default;
+}
+
+/** Resets line height for <input> elements */
+input {
+line-height: normal;
+}
+
+/** Removes padding from checkboxes and radio buttons */
+input[type="checkbox"], input[type="radio"] {
+box-sizing: border-box;
+padding: 0px;
+}
+
+/** Adjusts height of inner and outer spin buttons for number inputs */
+input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
+height: auto;
+}
+
+/** Applies textfield appearance and content-box box-sizing to search inputs */
+input[type="search"] {
+appearance: textfield;
+box-sizing: content-box;
+}
+
+/** Removes default search decoration for search inputs */
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+appearance: none;
+}
+
 fieldset { border: 1px solid silver; margin: 0px 2px; padding: 0.35em 0.625em 0.75em; }
 table { border-collapse: collapse; border-spacing: 0px; }
 *, ::after, ::before { box-sizing: inherit; }
