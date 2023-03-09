@@ -21,16 +21,28 @@ body {
   }
   
   #about h1 {
-  text-align: center;
-  font-size: 36px;
-  margin-bottom: 30px;
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 30px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    color: #1e90ff;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 2px #dcdcdc;
   }
+  
 
   #about h2 {
-  text-align: center;
-  font-size: 36px;
-  margin-bottom: 30px;
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 30px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    color: #1e90ff;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 2px #dcdcdc;
   }
+  
   
   #about p {
   font-size: 18px;
@@ -153,7 +165,7 @@ body {
   .skill-item i {
   font-size: 36px;
   }
-  }
+  
   
   @media screen and (max-width: 480px) {
   /* Estilos para dispositivos móviles pequeños */
