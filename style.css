@@ -1,5 +1,4 @@
 
-<<<<<<< HEAD
 
 header {
   background-color: #7851a9;
@@ -280,7 +279,6 @@ input[type="submit"] {
     transform: translateY(-5px);
     box-shadow: 0px 8px 15px rgba(0,0,0,0.3);
 }
-=======
 /* Set display to inline-block for all elements with class "fa" or "fa-stack" */
 .fa, .fa-stack {
     display: inline-block;
@@ -712,4 +710,3 @@ html:not(.platform-mac) .site-sidebar .block-blog { display: none; }
     }
   }
   
->>>>>>> 3b117ef77cbf6fc073906d1f89097dfe2e3eec15
