@@ -1,4 +1,5 @@
 
+<<<<<<< HEAD
 
 header {
   background-color: #7851a9;
@@ -279,3 +280,436 @@ input[type="submit"] {
     transform: translateY(-5px);
     box-shadow: 0px 8px 15px rgba(0,0,0,0.3);
 }
+=======
+/* Set display to inline-block for all elements with class "fa" or "fa-stack" */
+.fa, .fa-stack {
+    display: inline-block;
+    }
+    
+/* Set list-style to none for multiple elements */
+.main-navigation ul,
+.site-sidebar .posts-list,
+.tech-icons,
+.tech-tags,
+.timeline > ul {
+list-style: none;
+}
+
+/* Set font properties for elements with class "fa" */
+.fa {
+font-style: normal;
+font-variant: normal;
+font-weight: normal;
+font-stretch: normal;
+line-height: 1;
+font-family: FontAwesome;
+font-size: inherit;
+text-rendering: auto;
+-webkit-font-smoothing: antialiased;
+}
+
+/* Set padding to 0 for multiple elements */
+hr,
+legend,
+td,
+th {
+padding: 0;
+}
+
+/* Remove border for images and legends */
+img,
+legend {
+border: 0;
+}
+
+/* Set float left for multiple elements */
+.dl-vertical dd,
+.dl-vertical dt,
+.main-navigation .navigation-extend-bar .social-icons,
+.pull-left {
+float: left;
+}
+
+/* Set margin to 0 for body and all heading elements */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+margin: 0;
+}
+
+/* Set the content for various FontAwesome icons */
+.fa-twitter-square::before {
+content: "";
+}
+.fa-facebook-square::before {
+content: "";
+}
+.fa-linkedin-square::before {
+content: "";
+}
+.fa-github-square::before {
+content: "";
+}
+.fa-bars::before,
+.fa-navicon::before,
+.fa-reorder::before {
+content: "";
+}
+.fa-envelope::before {
+content: "";
+}
+
+/* Set font-family and box-sizing for the html element */
+html {
+font-family: sans-serif;
+text-size-adjust: 100%;
+box-sizing: border-box;
+}
+
+/* Set display to block for various semantic elements */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+display: block;
+}
+
+/* Set display to inline-block for multimedia elements and adjust vertical-align */
+audio,
+canvas,
+progress,
+video {
+display: inline-block;
+vertical-align: baseline;
+}
+
+/* Set display to none for audio elements without controls and height to 0 */
+audio:not([controls]) {
+display: none;
+height: 0;
+}
+
+/* Set display to none for elements with "hidden" attribute and templates */
+[hidden],
+template {
+display: none;
+}
+
+/* Set background to 0 and remove outline for links */
+a {
+background: 0;
+}
+a:active,
+a:hover {
+outline: 0;
+}
+
+/* Set border-bottom for elements with "title" attribute */
+abbr[title] {
+border-bottom: 1px dotted;
+}
+
+/* Set font-weight for elements */
+b,
+optgroup,
+strong {
+font-weight: 700;
+}
+
+/* Set font-style for definition elements */
+dfn {
+font-style: italic;
+}
+
+/** Applies a yellow background with black text color to <mark> elements */
+mark {
+background: rgb(255, 255, 0);
+color: rgb(0, 0, 0);
+}
+
+/** Sets font size to 80% for <small> elements */
+small {
+font-size: 80%;
+}
+
+/** Sets font size to 75% and adjusts vertical position for subscripts and superscripts */
+sub, sup {
+font-size: 75%;
+line-height: 0;
+position: relative;
+vertical-align: baseline;
+}
+sup {
+top: -0.5em;
+}
+sub {
+bottom: -0.25em;
+}
+
+/** Hides any overflowing parts of SVG elements */
+svg:not(:root) {
+overflow: hidden;
+}
+
+/** Applies a margin of 1em on top and bottom and 40px on the sides to <figure> elements */
+figure {
+margin: 1em 40px;
+}
+
+/** Allows <pre> and <textarea> elements to display scrollbars if content overflows */
+pre, textarea {
+overflow: auto;
+}
+
+/** Applies monospace font and font size of 1em to <code>, <kbd>, <pre>, and <samp> elements */
+code, kbd, pre, samp {
+font-family: monospace, monospace;
+font-size: 1em;
+}
+
+/** Resets margin, color, and font of certain form elements */
+button, input, optgroup, select, textarea {
+color: inherit;
+font: inherit;
+margin: 0px;
+}
+
+/** Allows buttons to display any overflowing content */
+button {
+overflow: visible;
+}
+
+/** Prevents text-transform from being applied to disabled form elements */
+button, select {
+text-transform: none;
+}
+
+/** Applies uppercase text transformation to certain elements */
+.main-navigation, .person .person-content .person-title, .site-sidebar .block .block-title, h1, h2, h5 {
+text-transform: uppercase;
+}
+
+/** Applies button appearance and cursor to certain form elements */
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+appearance: button;
+cursor: pointer;
+}
+
+/** Resets cursor to default for disabled form elements */
+button[disabled], html input[disabled] {
+cursor: default;
+}
+
+/** Resets line height for <input> elements */
+input {
+line-height: normal;
+}
+
+/** Removes padding from checkboxes and radio buttons */
+input[type="checkbox"], input[type="radio"] {
+box-sizing: border-box;
+padding: 0px;
+}
+
+/** Adjusts height of inner and outer spin buttons for number inputs */
+input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
+height: auto;
+}
+
+/** Applies textfield appearance and content-box box-sizing to search inputs */
+input[type="search"] {
+appearance: textfield;
+box-sizing: content-box;
+}
+
+/** Removes default search decoration for search inputs */
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+appearance: none;
+}
+
+fieldset { border: 1px solid silver; margin: 0px 2px; padding: 0.35em 0.625em 0.75em; }
+table { border-collapse: collapse; border-spacing: 0px; }
+*, ::after, ::before { box-sizing: inherit; }
+body { font: 300 16px / 1.6 Roboto, Helvetica, sans-serif; }
+.button.button-red, .home-section, .person, .project-subtitle, .project-title, h1, h2 { -webkit-font-smoothing: antialiased; }
+h1, h2, h3, h4 { font-weight: 400; }
+::selection { color: rgb(255, 255, 255); background: #7851a9; }
+h1 { font-size: 36px; }
+h2 { font-size: 30px; }
+h3 { font-size: 24px; }
+h4 { font-size: 20px; }
+h5 { font-size: 14px; font-weight: 300; }
+a { text-decoration: none; }
+a:hover { text-decoration: underline; }
+strong { font-weight: 500; }
+hr { box-sizing: content-box; margin: 30px 0px; height: 1px; width: 100%; background: rgb(221, 221, 221); border: none; }
+.cv-tech-tags a:hover, .main-navigation a, .person, .person:hover, .portfolio-timeline .project-link, .site-sidebar .posts-list a { text-decoration: none; }
+.button, .icon, .tech-icon { display: inline-block; }
+blockquote { margin-left: 50px; padding-left: 15px; border-left: 3px solid rgb(221, 221, 221); }
+.button { padding: 0.4em 0.8em; line-height: 1; margin-right: 1em; }
+.button.button-icon { padding: 0px; margin-right: 0.2em; }
+.button.button-red { background-color: #7851a9; border: 1px solid #7851a9; color: rgb(255, 255, 255); padding: 0.7em 1.2em; font-weight: 400; }
+.button.button-red:focus, .button.button-red:hover { box-shadow: rgba(0, 0, 0, 0.15) 0px 1px 3px inset; }
+.button:not(.button-icon) .fa, .button:not(.button-icon) .icon { padding-right: 0.3em; }
+.block-title a, .social-icons.social-icons a { color: rgba(255, 255, 255, 0.6); }
+.block-title a:hover, .social-icons.social-icons a:hover { color: rgb(255, 255, 255); }
+body { background: rgb(246, 246, 246); }
+.site-sidebar { top: 0px; bottom: 0px; left: 0px; position: fixed; z-index: 2; width: 25%; font-size: 14px; color: rgb(255, 255, 255); text-align: left; background-color: #7851a9; }
+.site-sidebar .site-sidebar-inner { position: relative; height: 100%; overflow-y: auto; padding: 45px 40px; }
+.site-sidebar .site-sidebar-inner::-webkit-scrollbar { display: none; }
+.cv-header-meta, .cv-section, .cv-timeline-row, .home-section .home-buttons, .post .post-meta, .row, .tech-icons li, .tech-tags li, .timeline_element, .timeline_element-contents { overflow: hidden; }
+.site-sidebar .block + .block { margin-top: 45px; }
+.site-sidebar .block .block-title { font-size: 11px; font-weight: 300; color: rgba(255, 255, 255, 0.5); margin-bottom: 15px; }
+.site-sidebar .block-social { font-size: 22px; }
+html:not(.platform-mac) .site-sidebar .block-blog { display: none; }
+.person, .site-sidebar .posts-list > li { display: block; }
+.site-sidebar .posts-list, .site-sidebar .posts-list > li { margin: 0px; padding: 0px; }
+.site-sidebar .posts-list li { margin: 15px 0px; }
+.site-sidebar .posts-list a:focus .post-title, .site-sidebar .posts-list a:hover .post-title { color: rgb(255, 255, 255); }
+.site-sidebar .posts-list .post-title { font-size: 14px; font-weight: 300; color: rgba(255, 255, 255, 0.6); }
+.site-sidebar .posts-list .post-date { color: rgba(204, 204, 204, 0.7); font-size: 13px; line-height: 24px; font-weight: 300; font-style: italic; }
+.person { color: inherit; }
+.site-sidebar .person { text-align: center; }
+.person .person-avatar { border-radius: 50%; margin-bottom: 10px; }
+.person .person-avatar .avatar { width: 152px; height: 152px; border-radius: 50%; }
+.person .person-content { margin-left: -40px; margin-right: -40px; }
+.person .person-content .person-title { font-size: 22px; font-weight: 500; }
+.person .person-content .person-subtitle { font-size: 16px; font-weight: 300; text-transform: uppercase; }
+.main-navigation { margin: 45px -40px; line-height: 30px; position: relative; font-size: 14px; }
+.main-navigation .navigation-extend-bar { font-size: 18px; border-style: solid; border-color: rgba(255, 255, 255, 0.2); border-image: initial; border-width: 1px 0px; padding: 0px 20px; display: none; }
+.main-navigation .navigation-extend-bar a { display: inline-block; }
+.main-navigation .navigation-extend-bar .navigation-extend-button { width: 50%; }
+.main-navigation ul, .main-navigation ul > li { margin: 0px; padding: 0px; }
+.main-navigation ul > li { display: block; }
+.main-navigation ul + ul { margin-top: 30px; }
+.main-navigation ul li { position: relative; padding: 0px 40px; }
+.main-navigation ul li a:hover, .main-navigation ul li.current a { color: rgb(255, 255, 255); }
+.main-navigation a { color: rgba(255, 255, 255, 0.6); display: block; }
+.main-navigation a:focus, .main-navigation a:hover { color: rgb(255, 255, 255); }
+.site-main { margin-left: 25%; }
+.site-main::before { position: fixed; inset: 0px auto 0px 0px; content: " "; display: block; width: 25%; background: url("https://www.pixelstalk.net/wp-content/uploads/2016/06/Purple-galaxy-images-wallpapers.jpg") center top / cover no-repeat rgb(186, 186, 186); }
+.site-main .site-main-inner, .timeline_element { position: relative; }
+.main-section { max-width: 850px; padding: 50px; background-color: rgb(255, 255, 255); color: rgb(51, 51, 51); }
+.main-title { line-height: 1; margin-bottom: 15px; color: rgb(85, 85, 85); }
+.timeline { font-size: 16px; margin-left: -50px; }
+.timeline > ul, .timeline > ul > li { margin: 0px; padding: 0px; }
+.timeline > ul > li { display: block; }
+.timeline_element-contents { padding: 30px 0px; margin-left: 160px; }
+.timeline.talks-timeline .timeline_element-date { width: 150px; }
+.timeline.talks-timeline .timeline_element-contents { margin-left: 180px; }
+.tech-tags a, .tech-tags a:hover { background-color: #7851a9; }
+.home-section .home-buttons .button { user-select: none; text-transform: uppercase; font-weight: 300; text-decoration: none; opacity: 0.8; box-shadow: rgba(0, 0, 0, 0.47) 1px 1px 2px; margin-bottom: 1em; }
+.home-section .home-buttons .button:active, .home-section .home-buttons .button:focus, .home-section .home-buttons .button:hover { opacity: 1; }
+.portfolio-section { max-width: 1400px; }
+.portfolio-timeline .project-link { color: inherit; }
+.portfolio-timeline .project-link:hover { color: #7851a9; }
+.portfolio-timeline .project-text { width: 50%; float: left; }
+.portfolio-timeline .timeline_element.timeline_element--now .project-text { width: auto; float: none; }
+.portfolio-timeline .project-image { width: 50%; padding-left: 30px; text-align: center; float: left; }
+.portfolio-timeline .project-image img { max-width: 100%; max-height: 568px; }
+.portfolio-timeline .project-description:not(:first-child) { margin-top: 15px; }
+.portfolio-timeline .project-description:not(:last-child) { margin-bottom: 15px; }
+.portfolio-timeline .project-technologies { margin-top: 30px; }
+.project-title { font-weight: 400; font-size: 30px; line-height: 1; margin-bottom: 0.3em; }
+.project-subtitle { font-size: 18px; font-weight: 300; line-height: 1.5; text-transform: none; }
+.technologies-title { font-size: 12px; text-transform: uppercase; color: rgb(102, 102, 102); padding-bottom: 0.5em; }
+.tech-icons, .tech-icons > li, .tech-tags, .tech-tags > li { margin: 0px; padding: 0px; }
+.tech-tags > li { display: block; }
+.tech-tags li { display: inline-block; }
+.tech-tags a { display: inline-block; color: rgb(255, 255, 255); padding: 4px 10px; font-size: 13px; text-transform: uppercase; }
+.project-section .project-descriptions .project-description { position: relative; }
+.project-section .project-descriptions .project-description > p:first-child, .project-section .project-descriptions .project-description > ul:first-child { margin-top: 0px; }
+.project-section .project-descriptions .project-description ul:not(.tech-icons):not(.tech-tags) { padding-left: 20px; }
+.project-section .technologies-title { margin-top: 2em; }
+.post .post-title { font-weight: 400; font-size: 36px; line-height: 1; margin-bottom: 10px; color: #7851a9; text-transform: none; }
+.post .post-date { font-style: italic; }
+.timeline.talks-timeline .talk-buttons .button { margin-top: 1em; }
+
+
+
+
+/* Mobile */
+@media only screen and (max-width: 767px) {
+    body {
+      font-size: 16px;
+    }
+  
+    .site-sidebar {
+      width: 100%;
+    }
+  
+    .person-title {
+      font-size: 24px;
+    }
+  
+    .person-subtitle {
+      font-size: 16px;
+    }
+  
+    .block-main {
+      width: 100%;
+    }
+  
+    .block-main img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  
+  /* Tablet */
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    body {
+      font-size: 18px;
+    }
+  
+    .site-sidebar {
+      width: 30%;
+      float: left;
+    }
+  
+    .block-main {
+      width: 70%;
+      float: right;
+    }
+  
+    .block-main img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  
+  /* Desktop */
+  @media only screen and (min-width: 1025px) {
+    body {
+      font-size: 20px;
+    }
+  
+    .site-sidebar {
+      width: 25%;
+      float: left;
+    }
+  
+    .block-main {
+      width: 75%;
+      float: right;
+    }
+  
+    .block-main img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  
+>>>>>>> 3b117ef77cbf6fc073906d1f89097dfe2e3eec15
