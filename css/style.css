@@ -45,18 +45,23 @@ h5,
 h6 {
   margin: 0px;
 }
+
 .fa-twitter-square::before {
-  content: "";
+  content: "\f081"; /* Código del ícono de Twitter */
 }
+
 .fa-facebook-square::before {
-  content: "";
+  content: "\f082"; /* Código del ícono de Facebook */
 }
+
 .fa-linkedin-square::before {
-  content: "";
+  content: "\f08c"; /* Código del ícono de LinkedIn */
 }
+
 .fa-github-square::before {
-  content: "";
+  content: "\f092"; /* Código del ícono de GitHub */
 }
+
 .fa-bars::before,
 .fa-navicon::before,
 .fa-reorder::before {
