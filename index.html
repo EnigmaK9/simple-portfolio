@@ -89,6 +89,44 @@
       </div>
   </aside>
 
+  <script>
+    // Función para ocultar el contenido del aside y el elemento .site-main
+    function hideSidebar() {
+      var aside = document.getElementById('sidebar');
+      aside.style.display = 'none';
+      
+      var siteMain = document.querySelector('.site-main');
+      siteMain.style.marginLeft = '0';
+    }
+  
+    // Función para mostrar el contenido del aside y el elemento .site-main
+    function showSidebar() {
+      var aside = document.getElementById('sidebar');
+      aside.style.display = 'block';
+      
+      var siteMain = document.querySelector('.site-main');
+      siteMain.style.marginLeft = '25%';
+    }
+  
+    // Verificar el tamaño de la ventana y aplicar los cambios al cargar y redimensionar
+    window.addEventListener('load', function() {
+      if (window.innerWidth < 768) {
+        hideSidebar();
+      }
+    });
+  
+    window.addEventListener('resize', function() {
+      if (window.innerWidth < 768) {
+        hideSidebar();
+      } else {
+        showSidebar();
+      }
+    });
+  </script>
+  
+  
+
+
   <div class="site-main">
     <div class="site-main-inner">
       <div class="main-section portfolio-section">
