@@ -239,6 +239,7 @@ table {
 ::before {
   box-sizing: inherit;
 }
+
 body {
   font: 300 16px / 1.6 Roboto, Helvetica, sans-serif;
 }
@@ -534,8 +535,10 @@ html:not(.platform-mac) .site-sidebar .block-blog {
 .main-section {
   max-width: 850px;
   padding: 50px;
-  color: rgb(51, 51, 51);
+  color: rgb(3, 3, 3);
+  background-image: linear-gradient(to bottom right, #e1d4f1, #eeecec);
 }
+
 .main-title {
   line-height: 1;
   margin-bottom: 15px;
@@ -690,18 +693,19 @@ html:not(.platform-mac) .site-sidebar .block-blog {
   .body,
   .tech-tags,
   .site-main p,
-  .project-title,
   .timeline,
   .project-description,
   .technologies-title,
   .project-title {
   font-size: 12px;
   }
-  
+  .project-title {
+  font-size: 16px;
+  }
   #sidebar {
   display: none;
   }
-  
+ 
   /* Hide the site sidebar on small screens */
   .site-sidebar {
   width: 100%;
@@ -710,13 +714,19 @@ html:not(.platform-mac) .site-sidebar .block-blog {
   }
   
   .project-image {
-  text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
   .project-image img {
-  display: block;
-  margin: 0 auto;
+    display: block;
+    margin: 0 auto;
+    width: 4000px; /* Adjust the width as desired */
+    height: auto; /* Maintain the aspect ratio */
   }
+  
+  
 
   .main-section,
   .site-main,
@@ -766,4 +776,8 @@ html:not(.platform-mac) .site-sidebar .block-blog {
     margin-top: 0;
     margin-bottom: 0;
   }
+  .tech-tags a{
+    font-size: 8px;
+  }
+
 }
