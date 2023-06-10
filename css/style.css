@@ -1,3 +1,59 @@
+/* Responsive CSS */
+
+/* Add a media query for screens smaller than 768px */
+@media (max-width: 768px) {
+  /* Adjust the width of the site sidebar to 100% */
+  .site-sidebar {
+    width: 100%;
+  }
+  
+  /* Adjust the margin and padding of the site sidebar inner content */
+  .site-sidebar .site-sidebar-inner {
+    padding: 15px;
+  }
+  
+  /* Adjust the margin and padding of the main navigation */
+  .main-navigation {
+    margin: 0;
+    padding: 15px;
+  }
+  
+  /* Adjust the margin of the main section */
+  .site-main {
+    margin-left: 0;
+  }
+  
+  /* Adjust the background image of the site main */
+  .site-main::before {
+    content: none;
+  }
+  
+  /* Adjust the width of the timeline elements in the portfolio section */
+  .portfolio-timeline .project-text,
+  .portfolio-timeline .project-image {
+    width: 100%;
+    float: none;
+    padding-left: 0;
+  }
+  
+  /* Adjust the margin of the project descriptions in the portfolio section */
+  .portfolio-timeline .project-description:not(:first-child),
+  .portfolio-timeline .project-description:not(:last-child) {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
 .fa,
 .fa-stack {
   display: inline-block;
