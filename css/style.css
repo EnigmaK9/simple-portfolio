@@ -534,7 +534,6 @@ html:not(.platform-mac) .site-sidebar .block-blog {
 .main-section {
   max-width: 850px;
   padding: 50px;
-  background-color: rgb(255, 255, 255);
   color: rgb(51, 51, 51);
 }
 .main-title {
