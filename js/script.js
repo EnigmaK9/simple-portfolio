@@ -6,7 +6,7 @@ window.addEventListener('DOMContentLoaded', event => {
             target: '#sideNav',
             rootMargin: '0px 0px -40%',
         });
-    };
+    }
 
     // Collapse responsive navbar when toggler is visible
     const navbarToggler = document.body.querySelector('.navbar-toggler');
@@ -102,46 +102,60 @@ window.addEventListener('DOMContentLoaded', event => {
         toggleSwitch.addEventListener('change', switchTheme, false);
     }
 
-    // Back to top button
-    const backToTopButton = document.createElement('button');
-    backToTopButton.innerHTML = '↑ Back to Top';
-    backToTopButton.className = 'back-to-top';
-    document.body.appendChild(backToTopButton);
+// Back to top button
+const backToTopButton = document.createElement('button');
+backToTopButton.innerHTML = '↑ Back to Top';
+backToTopButton.className = 'back-to-top';
+document.body.appendChild(backToTopButton);
 
-    const scrollFunction = () => {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            backToTopButton.style.display = 'block';
-        } else {
-            backToTopButton.style.display = 'none';
-        }
-    };
+// CSS for centering the button and adding hover animation
+const style = document.createElement('style');
+style.innerHTML = `
+    .back-to-top {
+        position: fixed;
+        bottom: 0px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: none;
+        padding: 5px 70px;
+        font-size: 10px;
+        cursor: pointer;
+        background-color: #7851a9;
+        color: white;
+        border: none;
+        border-radius: 0px;
+        z-index: 0000;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+    .back-to-top:hover {
+        background-color: #563d7c;
+        transform: translateX(-50%) translateY(-5px);
+    }
+`;
+document.head.appendChild(style);
 
-    window.onscroll = function () {
-        scrollFunction();
-    };
+// Function to show the button at the end of the page
+const scrollFunction = () => {
+    if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+        backToTopButton.style.display = 'block';
+    } else {
+        backToTopButton.style.display = 'none';
+    }
+};
 
-    backToTopButton.addEventListener('click', () => {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-    });
+window.onscroll = scrollFunction;
 
-    // Center the button
-    const centerButton = () => {
-        const windowWidth = window.innerWidth;
-        const buttonWidth = backToTopButton.offsetWidth;
-        const leftPosition = (windowWidth - buttonWidth) / 2;
-        backToTopButton.style.left = `${leftPosition}px`;
-    };
-
-    // Initial centering
-    centerButton();
-
-    // Recenter on window resize
-    window.addEventListener('resize', centerButton);
+backToTopButton.onclick = () => {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+};
 
     // Dynamic copyright year
-    const currentYear = new Date().getFullYear();
-    document.getElementById('year').textContent = currentYear;
+    const yearElement = document.getElementById('year');
+    if (yearElement) {
+        const currentYear = new Date().getFullYear();
+        yearElement.textContent = currentYear;
+    }
 
     // Tooltip initialization
     const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
@@ -254,10 +268,12 @@ window.addEventListener('DOMContentLoaded', event => {
 
     // Custom cursor
     const customCursor = document.querySelector('.custom-cursor');
-    document.addEventListener('mousemove', (e) => {
-        customCursor.style.left = e.pageX + 'px';
-        customCursor.style.top = e.pageY + 'px';
-    });
+    if (customCursor) {
+        document.addEventListener('mousemove', (e) => {
+            customCursor.style.left = e.pageX + 'px';
+            customCursor.style.top = e.pageY + 'px';
+        });
+    }
 
     // Slide-in animation
     const slideInElements = document.querySelectorAll('.slide-in');
