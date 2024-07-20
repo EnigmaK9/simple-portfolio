@@ -546,7 +546,7 @@ html:not(.platform-mac) .site-sidebar .block-blog {
 }
 .timeline {
   font-size: 16px;
-  margin-left: -30px;
+  margin-left: -10px;
 }
 .timeline > ul,
 .timeline > ul > li {
