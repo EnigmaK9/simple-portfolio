@@ -1,12 +1,3 @@
-/*!
-* Start Bootstrap - Resume v7.0.6 (https://startbootstrap.com/theme/resume)
-* Copyright 2013-2023 Start Bootstrap
-* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-resume/blob/master/LICENSE)
-*/
-//
-// Scripts
-//
-
 window.addEventListener('DOMContentLoaded', event => {
     // Activate Bootstrap scrollspy on the main nav element
     const sideNav = document.body.querySelector('#sideNav');
@@ -113,7 +104,7 @@ window.addEventListener('DOMContentLoaded', event => {
 
     // Back to top button
     const backToTopButton = document.createElement('button');
-    backToTopButton.innerHTML = '↑';
+    backToTopButton.innerHTML = '↑ Back to Top';
     backToTopButton.className = 'back-to-top';
     document.body.appendChild(backToTopButton);
 
@@ -133,6 +124,20 @@ window.addEventListener('DOMContentLoaded', event => {
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
     });
+
+    // Center the button
+    const centerButton = () => {
+        const windowWidth = window.innerWidth;
+        const buttonWidth = backToTopButton.offsetWidth;
+        const leftPosition = (windowWidth - buttonWidth) / 2;
+        backToTopButton.style.left = `${leftPosition}px`;
+    };
+
+    // Initial centering
+    centerButton();
+
+    // Recenter on window resize
+    window.addEventListener('resize', centerButton);
 
     // Dynamic copyright year
     const currentYear = new Date().getFullYear();
